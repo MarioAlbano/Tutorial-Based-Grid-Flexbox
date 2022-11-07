@@ -1,13 +1,212 @@
-/* Importing another CSS files */
-@import url(css/header.css);
-@import url(css/main.css);
-@import url(css/footer.css);
-
-/* CSS Reset */
 * {
-    margin: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header,
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem;
+  background-color: #2A282A;
+  border-bottom: 3px solid #C90B3D;
+  transition: 1.4s;
+}
+
+header:hover,
+footer:hover {
+  border-bottom: 3px solid #000;
+  transition: 1.4s;
+}
+
+.ImgLogo {
+  width: 12.5rem;
+  height: auto;
+}
+
+.navFlex {
+  display: flex;
+  gap: 0 1.25rem;
+}
+
+.navAStyle {
+  text-decoration: none;
+  color: #D4D4CA;
+  font-size: 1.125rem;
+  border: 2px solid transparent;
+  padding: 0.3125rem;
+  transition: 0.7s;
+}
+
+.navAStyle:hover {
+  border-bottom: 2px solid #C90B3D;
+  transition: 0.7s;
+}
+
+#titleSection {
+  text-align: center;
+  padding: 1.25rem 0;
+}
+
+#titleSection h1 {
+  font-weight: 500;
+}
+
+main {
+  margin-bottom: 1.25rem;
+}
+
+.containerMain {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: "containerMainArticle containerMainAside";
+}
+
+.containerMainArticle {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+  padding-bottom: 1.25rem;
+  grid-area: containerMainArticle;
+}
+
+.cardArticle {
+  display: flex;
+  flex-direction: column;
+  width: 18.75rem;
+  border: 2px solid transparent;
+  border-radius: 0.625rem;
+  padding: .3125rem;
+  gap: 0.3125rem;
+}
+
+.cardArticle:hover {
+  border: 2px solid #000;
+  transition: 0.3s;
+}
+
+.cardArticle h3 {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.cardArticle img {
+  width: 17.5rem;
+  height: 12.5rem;
+  border-radius: 0.625rem;
+}
+
+.containerMainAside {
+  background-color: #393839;
+  color: #D4D4D4;
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem 0;
+  padding-bottom: 1.25rem;
+  grid-area: containerMainAside;
+  min-width: 18.75rem;
+}
+
+.asideTitle {
+  margin-top: 1.25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.cardAside {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid transparent;
+  border-radius: 0.625rem;
+  padding: .3125rem;
+  gap: 0.3125rem;
+}
+
+.cardAside:hover {
+  border: 2px solid #d4d4d4;
+  transition: 0.3s;
+}
+
+.cardAside h3 {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.cardAside img {
+  width: 15.625rem;
+  height: 10.9375rem;
+  border-radius: 0.625rem;
+}
+
+.cardAside h3 {
+  text-align: center;
+}
+
+.buttonReturn {
+  text-decoration: none;
+  color: #D4D4CA;
+  font-size: 1.125rem;
+  border-bottom: 2px solid transparent;
+  transition: 1s;
+}
+
+.buttonReturn:hover {
+  border-bottom: 2px solid #C90B3D;
+  transition: 1s;
+}
+
+@media (max-width: 655px) {
+  .containerMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 570px) {
+  .cardAside {
     padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: 'Roboto', sans-serif;
+  }
+
+  .cardArticle {
+    padding: 0;
+  }
+}
+
+@media (max-width: 520px) {
+
+  header,
+  footer {
+    flex-direction: column;
+    gap: 1.25rem 0;
+    align-content: center;
+  }
+
+  .containerMainAside {
+    min-width: auto;
+  }
+
+  .cardArticle img {
+    width: 12.5rem;
+    height: 12.5rem;
+    align-self: center;
+  }
+
+  .cardArticle h3 {
+    text-align: center;
+  }
+
+  .cardAside img {
+    width: 12.5rem;
+    height: 10.9375rem;
+  }
 }
