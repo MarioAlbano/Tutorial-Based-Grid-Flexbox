@@ -30,13 +30,15 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ```
 └── src
-    ├── assets
-    ├── Soft-Skills
+    ├── components
+    ├── pages
+    ├── styles
 ```
 
 | Folder              | Description                                      |
 | ----------          | -------------------------------------------      |
-| **Programming**     | Files and notes about web development material   |
-| **Soft-Skills**     | Files and notes about  soft skills material      |
+| **components**      | Page components                                  |
+| **pages**           | Page components                                  |
+| **styles**          | Application styles                               |
 
 <p align="center">Made with 💜 by Mario</p>
