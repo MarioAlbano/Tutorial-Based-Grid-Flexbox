@@ -1,7 +1,7 @@
 ### Hi there! 👋
 
 > This project it's a exercise that simulate a sports web-site.
-<img width="1426" alt="Captura de Tela 2023-01-23 às 13:36" src="src/components/site-example">
+<img width="1426" alt="Captura de Tela 2023-01-23 às 13:36" src="src/components/site-example.jpg">
 
 ## What is inside?
 
